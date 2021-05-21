@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiries</title>
+    <link rel="stylesheet" href="css/com.css">
+
+
+    <nav id="nav-menu container">
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="form.html">Enquiries</a></li>
+        </ul>
+    </nav>
+
+
+    </div>
+    </div>
+
+
+
+    <style>
+        body{
+           background-color: rgb(90, 231, 90); 
+           height: 100vh;
+           display: flex;
+           justify-content: space-around;
+           align-items: center;
+           flex-direction: column;
+           padding: 0 30px 30px 30px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+
+    <h1 style="text-align: center;">ENQUIRIES</h1>
+    <form name="enquiry" action="" onsubmit="formValidation()" method="">
+        <table>
+            <tr>
+                <td>Name: </td>
+                <td><input type="text" name="Name"  id="name"/></td>
+            </tr>
+            <tr>
+                <td>E-mail: </td>
+                <td><input type="text" name="EMail" id="email" /></td>
+            </tr>
+            <tr>
+                <td>Number: </td>
+                <td><input type="text" name="Telephone" id="number"/></td>
+            </tr>
+            <tr>
+                <td>Enquiry: </td>
+                <td><textarea cols="55" name="Comment" id="enquiry"> </textarea></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="send" name="Submit" /> </td>
+                <td><input type="reset" value="Reset" name="Reset" /></td>
+            </tr>
+        </table>
+
+
+    </form>
+    <script src="Contact_us.js"></script>
+
+<!--
+    <script>
+        function TIENDA() {
+            var name =
+                document.forms["enquiry"]["Name"];
+            var email =
+                document.forms["enquiry"]["EMail"];
+            var phone =
+                document.forms["enquiry"]["Telephone"];
+
+
+
+
+            if (name.value == "") {
+                window.alert("Please enter your name.");
+                name.focus();
+                return false;
+            }
+
+
+
+            if (email.value == "") {
+                window.alert(
+                    "Please enter a valid e-mail address.");
+                email.focus();
+                return false;
+            }
+
+            if (phone.value == "") {
+                window.alert(
+                    "Please enter your number.");
+                phone.focus();
+                return false;
+            } else if (!isNaN(phone.value)){
+                alert("Enter a number")
+            }
+
+
+        }
+    </script>
+
+    --->
+
+</body>
+
+</html>
